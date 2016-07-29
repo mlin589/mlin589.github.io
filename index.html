@@ -12,9 +12,17 @@
 
     <title>Max Lin Photography</title>
 
+    <link rel="stylesheet" href="assets/image-comparison-slider/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="assets/image-comparison-slider/css/style.css"> <!-- Resource style -->
+
     <!-- Bootstrap core CSS -->
     <link href="assets/material/css/material-kit.css" rel="stylesheet">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -85,7 +93,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img class="first-slide" src="assets/images/IMAG0014.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -135,13 +143,15 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <a class="example-image-link" href="assets/images/IMAG0006.jpg" data-lightbox="example-1">
+          <img class="img-circle" src="assets/images/IMAG0006.jpg" alt="Generic placeholder image" width="140" height="140"/></a>
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <a class="example-image-link" href="assets/images/IMAG0005.jpg" data-lightbox="example-1">
+          <img class="img-circle" src="assets/images/IMAG0005.jpg" alt="Generic placeholder image" width="140" height="140"/></a>
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -165,6 +175,17 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
+          <figure class="cd-image-container">
+            <img src="assets/images/img-original.jpg" alt="Original Image">
+            <span class="cd-image-label" data-type="original">Original</span>
+
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+              <img src="assets/images/img-modified.jpg" alt="Modified Image">
+              <span class="cd-image-label" data-type="modified">Modified</span>
+            </div>
+
+            <span class="cd-handle"></span>
+          </figure> <!-- cd-image-container -->
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
@@ -210,12 +231,27 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/jquery/jquery-3.1.0.js"><\/script>')</script>
+    <!--<script>window.jQuery || document.write('<script src="assets/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>-->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="assets/bootstrap/js/vendor/holder.min.js"></script>
+    <!-- <script src="assets/bootstrap/js/vendor/holder.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- Lightbox JavaScript -->
+    <script src="assets/lightbox/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+          'alwaysShowNavOnTouchDevices': true,
+          'wrapAround': true,
+          'fadeDuration': 250,
+          'resizeDuration': 250
+        })
+    </script>
+
+    <script src="assets/image-comparison-slider/js/main.js"></script> <!-- Resource jQuery -->
+
   </body>
 </html>
