@@ -13,23 +13,23 @@
     <title>Max Lin Photography</title>
 
     <link rel="stylesheet" href="assets/image-comparison-slider/css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="assets/image-comparison-slider/css/style.css"> <!-- Resource style -->
+    <!-- <link rel="stylesheet" href="assets/image-comparison-slider/css/style.css"> <!-- Resource style --> -->
+    
+    <!-- Lightbox -->
+    <!-- <link href="assets/lightbox/css/lightbox.css" rel="stylesheet"> -->
 
     <!-- Bootstrap core CSS -->
     <link href="assets/material/css/material-kit.css" rel="stylesheet">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Lightbox -->
-    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
-
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- <link href="assets/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/bootstrap/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="assets/bootstrap/js/ie-emulation-modes-warning.js"></script>-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,9 +59,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Services</a></li>
+                <li><a href="pricing.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
+                <li><a href="about.html">About</a></li>
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -72,7 +74,7 @@
                     <li><a href="#">Separated link</a></li>
                     <li><a href="#">One more separated link</a></li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -141,37 +143,37 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+     <!--  <div class="row">
         <div class="col-lg-4">
           <a class="example-image-link" href="assets/images/IMAG0006.jpg" data-lightbox="example-1">
           <img class="img-circle" src="assets/images/IMAG0006.jpg" alt="Generic placeholder image" width="140" height="140"/></a>
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div> --><!-- /.col-lg-4 -->
+        <!-- <div class="col-lg-4">
           <a class="example-image-link" href="assets/images/IMAG0005.jpg" data-lightbox="example-1">
           <img class="img-circle" src="assets/images/IMAG0005.jpg" alt="Generic placeholder image" width="140" height="140"/></a>
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div> --><!-- /.col-lg-4 -->
+       <!--  <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        </div> --><!-- /.col-lg-4 -->
+      <!-- </div> --><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <!-- <hr class="featurette-divider"> -->
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <h2 class="featurette-heading" id="feature-1">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
@@ -222,7 +224,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; Max Lin 2016 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
