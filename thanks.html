@@ -31,18 +31,6 @@
 
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-
-
-    <style type="text/css">
-      .antispam { display:none;}
-    </style>
-  
-    <script type="text/javascript">
-      // split your email into two parts and remove the @ symbol
-      var first = "placeholder";
-      var last = "gmail.com";
-    </script>
-
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -86,64 +74,11 @@
 
       </div>
     </div>
-    
+
+    <hr class="featurette-divider">
+    Thanks! We'll get back to you as soon as we can.
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
-
-      <hr class="featurette-divider">
-        <form method="post" action="http://mlin589.herokuapp.com/submit.php">
-         <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
-        <p>Your name:
-        <br /><input name="name" /></p>
-        
-        <p>Your email:
-        <br /><input name="email" /></p>
-        
-        <p>Your phone number:
-        <br /><input name="phone" /></p>
-
-        <p>Preferred method of contact:
-        <div class="btn-group" data-toggle="buttons-radio">
-          <button type="button" class="btn btn-primary">Phone</button>
-          <button type="button" class="btn btn-primary">Email</button>
-        </div>
-        <br /><input name="preferred_contact" /></p>
-
-        <p>Property address:
-        <br /><input name="address" /></p>
-
-        <p>Date requested:
-        <br /><input name="date" /></p>
-
-        <p>Number of photos requested:
-        <br /><input name="number_photos" /></p>
-
-        <p>Notes about your property?
-        <br /><textarea name="additional_notes" rows="10" cols="50"></textarea></p>
-
-        <!-- Important: if you add any fields to this page, you will also need to update the php script -->
-        
-        <p class="antispam">Leave this empty:
-        <br /><input name="url" /></p>
-        
-        <p><input type="submit" value="Send" /></p>
-        
-      </form>
-    
-    
-      <p>My e-mail address:
-      <script type="text/javascript">
-        document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');
-      </script>
-      <noscript>
-      Please enable javascript or use the contact form.
-      </noscript>
-      </p>
-    
-      <p><small><a href="https://github.com/nfriedly/spam-free-php-contact-form">Spam-free contact form</a> by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
-
-      <hr class="featurette-divider">
-
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
