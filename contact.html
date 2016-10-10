@@ -47,6 +47,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -93,20 +94,16 @@
       <hr class="featurette-divider">
         <form method="post" action="http://mlin589.herokuapp.com/submit.php">
          <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
-        <p>Your name:
+        <p>Name:
         <br /><input name="name" /></p>
         
-        <p>Your email:
+        <p>Email:
         <br /><input name="email" /></p>
         
-        <p>Your phone number:
+        <p>Phone number:
         <br /><input name="phone" /></p>
 
         <p>Preferred method of contact:
-        <div class="btn-group" data-toggle="buttons-radio">
-          <button type="button" class="btn btn-primary">Phone</button>
-          <button type="button" class="btn btn-primary">Email</button>
-        </div>
         <br /><input name="preferred_contact" /></p>
 
         <p>Property address:
@@ -125,7 +122,7 @@
         
         <p class="antispam">Leave this empty:
         <br /><input name="url" /></p>
-        
+
         <p><input type="submit" value="Send" /></p>
         
       </form>
