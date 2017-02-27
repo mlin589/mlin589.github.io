@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,66 +10,57 @@
     <meta name="author" content="">
     <!-- TODO: -->
     <!-- <link rel="icon" href="../../favicon.ico"> -->
-
     <title>Max Lin Photography</title>
-
     <!-- Bootstrap core CSS -->
     <!-- <link href="assets/material/css/material-kit.css" rel="stylesheet"> -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="assets/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- <script src="assets/bootstrap/js/ie-emulation-modes-warning.js"></script> -->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet">
-
-
     <style type="text/css">
-      .antispam { display:none;}
+    .antispam {
+        display: none;
+    }
     </style>
-  
     <script type="text/javascript">
-      // split your email into two parts and remove the @ symbol
-      var first = "placeholder";
-      var last = "gmail.com";
+    // split your email into two parts and remove the @ symbol
+    var first = "placeholder";
+    var last = "gmail.com";
     </script>
-
-  </head>
+</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
 
+<body>
     <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Max Lin Photography</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="about.html">About</a></li> -->
-                <!-- <li class="dropdown">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Max Lin Photography</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <!-- <li><a href="about.html">About</a></li> -->
+                            <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
@@ -80,86 +72,88 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li> -->
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
-    
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
-
-      <hr class="featurette-divider">
+        <hr class="featurette-divider">
         <form method="post" action="http://mlin589.herokuapp.com/submit.php">
-         <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
-        <p>Name:
-        <br /><input name="name" /></p>
-        
-        <p>Email:
-        <br /><input name="email" /></p>
-        
-        <p>Phone number:
-        <br /><input name="phone" /></p>
-
-        <p>Preferred method of contact:
-        <br /><input name="preferred_contact" /></p>
-
-        <p>Property address:
-        <br /><input name="address" /></p>
-
-        <p>Date requested:
-        <br /><input name="date" /></p>
-
-        <p>Number of photos requested:
-        <br /><input name="number_photos" /></p>
-
-        <p>Notes about your property?
-        <br /><textarea name="additional_notes" rows="10" cols="50"></textarea></p>
-
-        <!-- Important: if you add any fields to this page, you will also need to update the php script -->
-        
-        <p class="antispam">Leave this empty:
-        <br /><input name="url" /></p>
-
-        <p><input type="submit" value="Send" /></p>
-        
-      </form>
-    
-    
-      <p>My e-mail address:
-      <script type="text/javascript">
-        document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');
-      </script>
-      <noscript>
-      Please enable javascript or use the contact form.
-      </noscript>
-      </p>
-    
-      <p><small><a href="https://github.com/nfriedly/spam-free-php-contact-form">Spam-free contact form</a> by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
-
-      <hr class="featurette-divider">
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; Max Lin 2016 &middot;</p>
-        <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
-      </footer>
-
-    </div><!-- /.container -->
-
-
+            <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
+            <p>Name:
+                <br />
+                <input name="name" />
+            </p>
+            <p>E-mail:
+                <br />
+                <input name="email" />
+            </p>
+            <p>Phone number:
+                <br />
+                <input name="phone" />
+            </p>
+            <p>Preferred method of contact:
+                <br />
+                <input name="preferred_contact" />
+            </p>
+            <p>Property address:
+                <br />
+                <input name="address" />
+            </p>
+            <p>Preferred date(s) requested:
+                <br />
+                <input name="date" />
+            </p>
+            <p>Number of photos requested:
+                <br />
+                <input name="number_photos" />
+            </p>
+            <p>Notes about your property?
+                <br />
+                <textarea name="additional_notes" rows="10" cols="50"></textarea>
+            </p>
+            <!-- Important: if you add any fields to this page, you will also need to update the php script -->
+            <p class="antispam">Leave this empty:
+                <br />
+                <input name="url" />
+            </p>
+            <p>
+                <input type="submit" value="Send" />
+            </p>
+        </form>
+        <p>My e-mail address:
+            <script type="text/javascript">
+            document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+            </script>
+            <noscript>
+                Please enable javascript or use the contact form.
+            </noscript>
+        </p>
+        <p><small><a href="https://github.com/nfriedly/spam-free-php-contact-form">Spam-free contact form</a> by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
+        <hr class="featurette-divider">
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; Max Lin 2017 &middot;</p>
+            <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
+        </footer>
+    </div>
+    <!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+    window.jQuery || document.write('<script src="assets/bootstrap/js/vendor/jquery.min.js"><\/script>')
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!-- <script src="assets/bootstrap/js/vendor/holder.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script> -->
-  </body>
+</body>
+
 </html>
