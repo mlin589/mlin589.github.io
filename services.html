@@ -17,6 +17,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Max Lin Photography</title>
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <!-- <link href="assets/material/css/material-kit.css" rel="stylesheet"> -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -116,7 +118,7 @@
                     <p class="lead">A portfolio of your home that flows between the front yard, kitchen, bedrooms, bathrooms, dining room, living room, and back yard. Additional features can be highlighted based on your preferences.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/outside.jpg">
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -132,7 +134,7 @@
                     </p>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/living.jpg">
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -143,12 +145,12 @@
                         <br>Physical USB drive delivery can be negotiated.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/stairs.jpg">
                 </div>
             </div>
             <hr class="featurette-divider">
             <div class="row featurette">
-                <div class="col-md-7">
+                <div class="col-md-7 col-md-push-5">
                     <h2 class="featurette-heading">Pricing<span class="text-muted"></span></h2>
                     <p class="lead">Varies based on distance, size, and quantity. Please feel free to contact us for a quote or for more information.
                         <br>
@@ -156,8 +158,8 @@
                         <li>Accepted payment methods: credit card, cash</li>
                     </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <div class="col-md-5 col-md-pull-7">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/houses.jpg" alt="Generic placeholder image">
                 </div>
             </div>
 
@@ -165,12 +167,18 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Areas Serviced<span class="text-muted"></span></h2>
-                    <p class="lead">
-                        <li></li>
-                    </p>
                 </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <br>
+                <div class="col-md-6">
+                    <a class="example-image-link" href="assets/images/zoom_out.jpg" data-lightbox="map">
+                        <img class="img-thumbnail" src="assets/images/zoom_out.jpg" width="640" height="360" />
+                    </a>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <a class="example-image-link" href="assets/images/zoom_in.jpg" data-lightbox="map">
+                        <img class="img-thumbnail" src="assets/images/zoom_in.jpg" width="640" height="360" />
+                    </a>
                 </div>
             </div>
 
@@ -185,7 +193,7 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="assets/images/lens.jpg">
                 </div>
             </div>
 
@@ -207,6 +215,16 @@
         window.jQuery || document.write('<script src="assets/bootstrap/js/vendor/jquery.min.js"><\/script>')
         </script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Lightbox JavaScript -->
+        <script src="assets/lightbox/js/lightbox.js"></script>
+        <script>
+        lightbox.option({
+            'alwaysShowNavOnTouchDevices': true,
+            'wrapAround': true,
+            'fadeDuration': 50,
+            'resizeDuration': 50
+        })
+        </script>
         <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
         <!-- <script src="assets/bootstrap/js/vendor/holder.min.js"></script> -->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
