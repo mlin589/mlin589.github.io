@@ -8,14 +8,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
     <title>Max Lin Photography</title>
     <!-- Bootstrap core CSS -->
     <!-- <link href="assets/material/css/material-kit.css" rel="stylesheet"> -->
@@ -86,17 +84,23 @@
     </div>
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
-
         <hr class="featurette-divider">
-        <p class="lead">Get in touch with us using the form below for a quote today!</p>
-         <p class="lead">Or, e-mail us at:
-            <script type="text/javascript">
-            document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
-            </script>
-            <noscript>
-                Please enable javascript or use the contact form.
-            </noscript>
-        </p>
+        <div class="row featurette">
+        <div class="col-md-7">
+            <p class="lead">Get in touch with us using the form below for a quote today!</p>
+            <p class="lead">Or, e-mail us at:
+                <script type="text/javascript">
+                document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+                </script>
+                <noscript>
+                    Please enable javascript or use the contact form.
+                </noscript>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="assets/images/dining.jpg">
+        </div>
+        </div>
         <hr class="featurette-divider">
         <form method="post" action="http://mlin589.herokuapp.com/submit.php">
             <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
