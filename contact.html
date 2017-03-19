@@ -86,6 +86,17 @@
     </div>
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container marketing">
+
+        <hr class="featurette-divider">
+        <p class="lead">Get in touch with us using the form below for a quote today!</p>
+         <p class="lead">Or, e-mail us at:
+            <script type="text/javascript">
+            document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+            </script>
+            <noscript>
+                Please enable javascript or use the contact form.
+            </noscript>
+        </p>
         <hr class="featurette-divider">
         <form method="post" action="http://mlin589.herokuapp.com/submit.php">
             <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
@@ -130,14 +141,6 @@
                 <input type="submit" value="Send" />
             </p>
         </form>
-        <p>My e-mail address:
-            <script type="text/javascript">
-            document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
-            </script>
-            <noscript>
-                Please enable javascript or use the contact form.
-            </noscript>
-        </p>
         <p><small><a href="https://github.com/nfriedly/spam-free-php-contact-form">Spam-free contact form</a> by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
         <hr class="featurette-divider">
         <!-- FOOTER -->
