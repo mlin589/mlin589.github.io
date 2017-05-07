@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <title>Max Lin Photography</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="assets/material/css/material-kit.css" rel="stylesheet"> -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="assets/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="assets/bootstrap/js/ie-emulation-modes-warning.js"></script> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="../index.css" rel="stylesheet">
+    <style type="text/css">
+    .antispam {
+        display: none;
+    }
+    </style>
+    <script type="text/javascript">
+    // split your email into two parts and remove the @ symbol
+    var first = "max";
+    var last = "maxlinphotography.com";
+    </script>
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../">Max Lin Photography</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="../services">Services</a></li>
+                            <li><a href="../portfolio">Portfolio</a></li>
+                            <li><a href="../contact">Contact</a></li>
+                            <!-- <li><a href="about.html">About</a></li> -->
+                            <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+        <hr class="featurette-divider">
+        <!-- <div class="row featurette">
+        <div class="col-md-7">
+            <p class="lead">Get in touch with us using the form below for a quote today!</p>
+            <p class="lead">Or, e-mail us at:
+                <script type="text/javascript">
+                document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+                </script>
+                <noscript>
+                    Please enable javascript or use the contact form.
+                </noscript>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="assets/images/dining.jpg">
+        </div>
+        </div>
+        <hr class="featurette-divider"> -->
+        <div class="col-md-7 col-md-push-5">
+           <img class="featurette-image img-responsive center-block" src="../assets/images/dining.jpg" width="480" height="360">
+            <p class="lead">E-mail:
+                <script type="text/javascript">
+                document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+                </script>
+                <noscript>
+                    Please enable javascript or use the contact form.
+                </noscript>
+            </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <p class="lead">Please fill out the form below and we'll get back to you within 24 hours. Thanks!</p>
+            <form method="post" action="http://mlin589.herokuapp.com/submit.php">
+                <!-- <form method="post" action="http://localhost:8080/contact-form/submit.php"> -->
+                <p>Name:
+                    <br />
+                    <input name="name" />
+                </p>
+                <p>E-mail:
+                    <br />
+                    <input name="email" />
+                </p>
+                <p>Phone number:
+                    <br />
+                    <input name="phone" />
+                </p>
+                <p>Property address:
+                    <br />
+                    <input name="address" />
+                </p>
+                <p>Additional notes:
+                    <br />
+                    <textarea name="additional_notes" rows="10" cols="50"></textarea>
+                </p>
+                <!-- Important: if you add any fields to this page, you will also need to update the php script -->
+                <p class="antispam">Leave this empty:
+                    <br />
+                    <input name="url" />
+                </p>
+                <p>
+                    <input type="submit" value="Send" />
+                </p>
+            </form>
+            <p><small><a href="https://github.com/nfriedly/spam-free-php-contact-form">Spam-free contact form</a> by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
+        </div>
+        <hr class="featurette-divider">
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; Max Lin 2017 &middot;</p>
+            <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../assets/bootstrap/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!-- <script src="assets/bootstrap/js/vendor/holder.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
+</html>
